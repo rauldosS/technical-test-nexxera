@@ -101,12 +101,11 @@ Content-Type: application/json; charset=utf8
 
 - <b>Content-Type</b>: cada solicitação deve incluir um `Content-Type` cabeçalho.
 
-## 🔨 Funcionalidades do projeto
-
-
 ```shell
 Content-Type: application/json; charset=utf8
 ```
+
+## 🔨 Consumo da API
 
 ### Todas as transações
 ```shell
@@ -185,6 +184,9 @@ Content-Type: application/json; charset=utf8
     "function": "C"
 }
 ```
+
+## Exemplo de consumo através do Insomnia REST
+## Exemplo de consumo através do Django Rest framework
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
