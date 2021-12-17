@@ -13,6 +13,8 @@ relacionados às atividades bancárias do seu aplicativo. A API de contas digita
 
 **Instruções necessárias para abrir e executar o projeto**
 
+> Instale o Python 3
+
 1. Clone o repositório e entre na pasta:
 ```shell
 git clone https://github.com/rauldosS/technical-test-nexxera.git
@@ -57,7 +59,7 @@ python manage.py runserver
 ```
 
 ### 📍 Execução no ambiente Windows
-![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/0.png?raw=true)
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/01.gif?raw=true)
 
 ### 📍 Informação de recursos
 
@@ -180,7 +182,12 @@ Content-Type: application/json; charset=utf8
 ```
 
 ## Consumo através do Insomnia REST
+
+- [JSON](https://docs.insomnia.rest/insomnia/import-export-data)
+- [Como Importar e Exportar Dados com Insomnia](https://docs.insomnia.rest/insomnia/import-export-data)
 ## Consumo através do Django Rest framework
+
+![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/0.png?raw=true)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 

@@ -1,0 +1,90 @@
+{
+    "url": "/api/transaction-list",
+    "name": "Todas as transações",
+    "method": "GET",
+    "body": {},
+    "parameters": [],
+    "headers": []
+},
+{
+    "url": "/api/transaction-detail/1",
+    "name": "Detalhes da Transação 1",
+    "method": "GET",
+    "body": {},
+    "parameters": [],
+    "headers": []
+},
+{
+    "url": "/api/transaction-list/?account=2",
+    "name": "Transações conta 1",
+    "method": "GET",
+    "body": {},
+    "parameters": [],
+    "headers": []
+},
+{
+    "url": "/api/transaction-list/?function=D",
+    "name": "Transações função Depósito",
+    "method": "GET",
+    "body": {},
+    "parameters": [],
+    "headers": []
+},
+{
+    "url": "/api/transaction-list/?account=1&unction=D",
+    "name": "Transações conta 1 e função Débito",
+    "method": "GET",
+    "body": {},
+    "parameters": [],
+    "headers": []
+},
+{
+    "url": "/api/transaction-list/?function=D",
+    "name": "Transações função Crédito",
+    "method": "GET",
+    "body": {},
+    "parameters": [],
+    "headers": []
+},
+{
+    "url": "/api/transaction-list/?account=1&unction=C",
+    "name": "Transações conta 1 e função Crédito",
+    "method": "GET",
+    "body": {},
+    "parameters": [],
+    "headers": []
+},
+{
+    "url": "/api/transaction-create",
+    "name": "Criar transação",
+    "method": "POST",
+    "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"account\": 1,\n    \"description\": \"Books\",\n    \"value\": 505,\n    \"function\": \"C\"\n}"
+    },
+    "parameters": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_9a714f7916744892be6810233e34e833"
+        }
+    ]
+},
+{
+    "url": "/api/transaction-update/5",
+    "name": "Atualizar transação",
+    "method": "POST",
+    "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"account\": 1,\n    \"description\": \"Notebook\",\n    \"value\": 3500,\n    \"function\": \"C\"\n}"
+    },
+    "parameters": [],
+    "headers": [
+        {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_9a714f7916744892be6810233e34e833"
+        }
+    ]
+}

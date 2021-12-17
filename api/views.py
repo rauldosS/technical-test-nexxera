@@ -11,10 +11,13 @@ from .models import Transaction, Account
 @api_view(['GET'])
 def apiOverview(request):
     api_urls = {
-        'Extract': '/transaction/?',
-        'Detail': '/transaction/<str:pk>',
-        'Create': '/transaction/',
-        'Update': '/transaction/<str:pk>',
+        'List': '/transaction-list/',
+        'List Account': '/transaction-list/?account=<str:pk>',
+        'List Debit/Credito': '/transaction-list/?function=<str:function>',
+        'List Account 1 and Credit': '/transaction-list/?account=1&function=<str:function>',
+        'Detail': '/transaction-detail/<str:pk>',
+        'Create': '/transaction-create/',
+        'Update': '/transaction-update/<str:pk>',
     }
 
     return Response(api_urls)
