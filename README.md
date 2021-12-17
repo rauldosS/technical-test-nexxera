@@ -11,6 +11,8 @@ relacionados às atividades bancárias do seu aplicativo NIX. A API de contas di
 
 ## informação de recursos
 
+| Informação | Descrição |
+| ------------------- | ------------------- |
 | Formato de resposta | JSON |
 | Requer autenticação | Não |
 | Taxa limitada | Não |
@@ -23,11 +25,21 @@ relacionados às atividades bancárias do seu aplicativo NIX. A API de contas di
 | function | opcional | Filtro para extrato das transações pela função Crédito ou Débito |
 | account | opcional | Filtro para extrato das transações pelo identificador numérico da Conta virtual |
 
-## URL base
+### URL base
 
 O URL base usado para a API é formatado conforme mostrado abaixo:
 
 ```bash
+http://127.0.0.1:8000/api/
+```
+
+### Exemplos de aplicação dos parâmetros
+
+```bash
+http://127.0.0.1:8000/api/
+```
+
+```url
 http://127.0.0.1:8000/api/
 ```
 
