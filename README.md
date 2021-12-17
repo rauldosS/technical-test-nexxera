@@ -7,7 +7,21 @@ Teste Técnico - Grupo de Programadores Python Nexxera
 ## 🔗 Prepare-se para usar a API
 
 Nossa API de transações de contas digitais permite que você trabalhe diretamente com recursos de dados 
-relacionados às atividades bancárias do seu aplicativo NIX. A API de contas digitais usa `HTTP` protocolos padrão em que as JSON cargas úteis serão retornadas em resposta às `HTTP` solicitações. É implementado internamente com base nos princípios RESTful.
+relacionados às atividades bancárias do seu aplicativo NIX. A API de contas digitais usa `HTTP` protocolos padrão em que as JSON cargas úteis serão retornadas em resposta às `HTTP` solicitações. É implementado internamente com base nos princípios `RESTful`.
+
+## informação de recursos
+
+| Formato de resposta | JSON |
+| Requer autenticação | Não |
+| Taxa limitada | Não |
+
+
+## Parâmetros
+
+| Nome | Requerido | Descrição |
+| ------------------- | ------------------- | ------------------- |
+| function | opcional | Filtro para extrato das transações pela função Crédito ou Débito |
+| account | opcional | Filtro para extrato das transações pelo identificador numérico da Conta virtual |
 
 ## URL base
 
@@ -19,7 +33,7 @@ http://127.0.0.1:8000/api/
 
 ## Cabeçalhos
 
-Uma solicitação HTTP típica para a API inclui os seguintes cabeçalhos:
+Uma HTTP típica para a API inclui os seguintes cabeçalhos:
 
 ```bash
 Content-Type: application/json; charset=utf8
