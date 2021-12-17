@@ -4,4 +4,4 @@ from .models import Transaction
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):
-    list_display = ['description', 'date', 'value', 'function', 'account']
+    list_display = ['id', 'description', 'date', 'value', 'function', 'account']
