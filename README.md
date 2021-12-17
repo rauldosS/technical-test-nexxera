@@ -22,23 +22,23 @@ cd technical-test-nexxera
 2. Crie um ambiente virtual:
 > Linux
 ```shell
-python -m venv env
+python -m venv <nome_da_virtualenv>
 ```
 
 > Windows
 ```shell
-python -m venv env
+python -m venv <nome_da_virtualenv>
 ```
 
 3. Ative o ambiente virtual que você acabou de criar:
 > Linux
 ```shell
-python -m venv env
+source <nome_da_virtualenv>/bin/activate
 ```
 
 > Windows
 ```shell
-.\env\Scripts\activate
+.\<nome_da_virtualenv>\Scripts\activate
 ```
 
 4. Instale os pacotes de desenvolvimento local:
