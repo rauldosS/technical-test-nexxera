@@ -182,14 +182,10 @@ Content-Type: application/json; charset=utf8
 - [JSON](https://github.com/rauldosS/technical-test-nexxera/blob/main/Transactions.json)
 - [Como Importar e Exportar Dados com Insomnia](https://docs.insomnia.rest/insomnia/import-export-data)
 
-> ```shell /api/transaction-list/```
 ![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/04.png?raw=true)
-
-> ```shell /api/transaction-create/```
 ![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/05.png?raw=true)
 ## Consumo através do Django Rest framework
 
-> ```shell /api/transaction-list/```
 ![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/03.png?raw=true)
 
 ## ✔️ Técnicas e tecnologias utilizadas
@@ -200,5 +196,3 @@ Content-Type: application/json; charset=utf8
 - `Frameworks`: Django
     - `Django REST framework`: é um kit de ferramentas poderoso e flexível para a construção de APIs da Web.
         - `Function Based Views`: Visualizações regulares baseadas em funções.
-
-## 📚 Mais informações
