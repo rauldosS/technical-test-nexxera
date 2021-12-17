@@ -33,14 +33,29 @@ O URL base usado para a API é formatado conforme mostrado abaixo:
 http://127.0.0.1:8000/api/
 ```
 
+Ao acessar a URL base será exibido uma página chamada Api Overview contendo as configurações e lista de requisições aceitas.
+
 ### Exemplos de aplicação dos parâmetros
 
+- Consultando transações por função específica
+
+> Transações função Débito (function=D)
 ```bash
-http://127.0.0.1:8000/api/
+http://127.0.0.1:8000/api/transactions/<b>?function=D</b>
+```
+> Transações função Crédito (function=C)
+```bash
+http://127.0.0.1:8000/api/transactions/?function=C
 ```
 
-```url
-http://127.0.0.1:8000/api/
+> Transações conta específico (account=1)
+```bash
+http://127.0.0.1:8000/api/transactions/?account=1
+```
+
+> Transações conta específico & função Débito (account=1, function=D)
+```bash
+http://127.0.0.1:8000/api/transactions/?account=1&function=D
 ```
 
 ## Cabeçalhos
