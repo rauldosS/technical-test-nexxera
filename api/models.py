@@ -12,10 +12,3 @@ class Transaction(models.Model):
     class Meta:
         verbose_name = 'Transaction'
         verbose_name_plural = 'Transactions'
-
-{
-    "account": 1,
-    "description": "Pizza",
-    "value": 109.43,
-    "function": "C"
-}

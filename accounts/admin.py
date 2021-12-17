@@ -8,4 +8,4 @@ class BankAdmin(admin.ModelAdmin):
 
 @admin.register(Account)
 class AccountAdmin(admin.ModelAdmin):
-    list_display = ['bank', 'number', 'name', 'validity', 'balance', 'limit', 'cvv', 'active']
+    list_display = ['bank', 'number', 'name', 'validity', 'balance', 'cvv', 'active']

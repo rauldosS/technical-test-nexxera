@@ -19,7 +19,6 @@ class Account(models.Model):
     name = models.CharField('Name', max_length=255)
     validity = models.DateField('Validity', auto_now=True)
     balance = models.DecimalField('Balance', default=0, max_digits=19, decimal_places=2)
-    limit = models.DecimalField('Limite', default=100, max_digits=19, decimal_places=2)
     cvv = models.CharField('Card Verification Value', max_length=4, validators=[RegexValidator(r'^\d{4}$', message='Enter only 4 numbers')], unique=True)
     active = models.BooleanField('Active', default=True)
 
