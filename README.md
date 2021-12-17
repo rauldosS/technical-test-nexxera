@@ -4,84 +4,10 @@
 
 Teste Técnico - Grupo de Programadores Python Nexxera
 
-## Prepare-se para usar a API
+## 📍 Prepare-se para usar a API
 
 Nossa API de transações de contas digitais permite que você trabalhe diretamente com recursos de dados 
 relacionados às atividades bancárias do seu aplicativo. A API de contas digitais usa protocolos padrão `HTTP` em que as cargas úteis JSON serão retornadas em resposta às solicitações `HTTP`. É implementado internamente com base nos princípios `RESTful`.
-
-## Informação de recursos
-
-| Informação | Descrição |
-| ------------------- | ------------------- |
-| Formato de resposta | JSON |
-| Formato de envio | JSON |
-| Requer autenticação | Não |
-| Taxa limitada | Não |
-
-### URL base
-
-O URL base usado para a API é formatado conforme mostrado abaixo:
-
-```shell
-http://127.0.0.1:8000/
-```
-
-### API Overview
-
-Ao acessar a URL base uma página chamada Api Overview contendo as configurações e lista de requisições aceitas será apresentadas.
-
-```shell
-http://127.0.0.1:8000/api
-```
-
-## ⚙️ Parâmetros
-
-| Nome | Requerido | Descrição |
-| ------------------- | ------------------- | ------------------- |
-| function | opcional | Filtro para extrato das transações pela função Crédito ou Débito |
-| account | opcional | Filtro para extrato das transações pelo identificador numérico da Conta virtual |
-
-### 📍 Exemplos de aplicação dos parâmetros
-
-> Transações função Débito (function=D)
-```shell
-/api/transactions/<b>?function=D</b>
-```
-> Transações função Crédito (function=C)
-```shell
-/api/transactions/?function=C
-```
-
-> Transações conta específico (account=1)
-```shell
-/api/transactions/?account=1
-```
-
-> Transações conta específico & função Débito (account=1, function=D)
-```shell
-/api/transactions/?account=1&function=D
-```
-
-## 📍 Cabeçalhos
-
-Uma HTTP típica para a API inclui os seguintes cabeçalhos:
-
-```shell
-Content-Type: application/json; charset=utf8
-```
-
-- <b>Content-Type</b>: cada solicitação deve incluir um `Content-Type` cabeçalho.
-
-## 🔨 
-
-## ✔️ Técnicas e tecnologias utilizadas
-
-**Faça uma lista de tecnologias e técnicas utilizadas (a justificativa e descrição são opcionais)**:
-
-- `Linguagem de programação`: Python
-- `Frameworks`: Django
-    - `Django REST framework`: é um kit de ferramentas poderoso e flexível para a construção de APIs da Web.
-        - `Function Based Views`: Visualizações regulares baseadas em funções.
 
 ## 🛠️ Abrir e rodar o projeto
 
@@ -138,5 +64,135 @@ python manage.py runserver
 
 ### 📍 Exemplo em gif
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/0.png?raw=true)
+
+### 📍 Informação de recursos
+
+| Informação | Descrição |
+| ------------------- | ------------------- |
+| Formato de resposta | JSON |
+| Formato de envio | JSON |
+| Requer autenticação | Não |
+| Taxa limitada | Não |
+
+### 📍 URL base (API Overview)
+
+O URL base usado para a API é formatado conforme mostrado abaixo:
+
+```shell
+http://127.0.0.1:8000/api/
+```
+
+Ao acessar a URL base uma página chamada Api Overview contendo as configurações e lista de requisições aceitas será apresentadas.
+
+## ⚙️ Parâmetros
+
+| Nome | Requerido | Descrição |
+| ------------------- | ------------------- | ------------------- |
+| function | opcional | Filtro para extrato das transações pela função Crédito ou Débito |
+| account | opcional | Filtro para extrato das transações pelo identificador numérico da Conta virtual |
+
+## 📍 Cabeçalhos
+
+Uma HTTP típica para a API inclui os seguintes cabeçalhos:
+
+```shell
+Content-Type: application/json; charset=utf8
+```
+
+- <b>Content-Type</b>: cada solicitação deve incluir um `Content-Type` cabeçalho.
+
+## 🔨 Funcionalidades do projeto
+
+
+```shell
+Content-Type: application/json; charset=utf8
+```
+
+### Todas as transações
+```shell
+/api/transaction-list
+```
+
+> Utilize o parâmetro `account` com o valor do `identificador da conta` para consultar o extrato de uma conta específica:
+```shell
+/api/transaction-list/?account=2
+```
+
+> Utilize o parâmetro `function` com o valor do `tipo de transação` para consultar o extrato do tipo Crédito ou Débito:
+    > Tipos disponíveis `C` e `D` sendo respectivamente identificadores de Crédito e Débito.
+
+```shell
+/api/transaction-list/?function=D
+```
+
+> Utilize os parâmetros `account` e `function` separados por `&` para realizar os filtros a cima juntos:
+```shell
+/api/transaction-list/?account=1&function=D
+```
+```shell
+/api/transaction-list/?account=1&function=D
+```
+
+### Detalhes da Transação
+> URL base
+
+```shell
+/api/transaction-detail
+```
+
+> Exemplo detalhes da transação 1
+```shell
+/api/transaction-detail/1
+```
+
+### Criar transação
+```shell
+/api/transaction-create
+```
+
+- No corpo da requisição adicione o JSON com os dados da transação a ser criada:
+
+```json
+{
+    "account": 1,
+    "description": "Books",
+    "value": 505,
+    "function": "C"
+}
+```
+
+### Atualizar transação
+
+> URL base
+
+```shell
+/api/transaction-update
+```
+
+> Exemplo atualizando transação 5
+
+```shell
+/api/transaction-update/5
+```
+
+- No corpo da requisição adicione o JSON com os dados da transação a ser atualizada:
+
+```json
+{
+    "account": 1,
+    "description": "Books",
+    "value": 505,
+    "function": "C"
+}
+```
+
+## ✔️ Técnicas e tecnologias utilizadas
+
+**Faça uma lista de tecnologias e técnicas utilizadas (a justificativa e descrição são opcionais)**:
+
+- `Linguagem de programação`: Python
+- `Frameworks`: Django
+    - `Django REST framework`: é um kit de ferramentas poderoso e flexível para a construção de APIs da Web.
+        - `Function Based Views`: Visualizações regulares baseadas em funções.
 
 ## 📚 Mais informações
