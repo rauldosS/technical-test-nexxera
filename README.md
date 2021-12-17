@@ -62,7 +62,7 @@ Rode o servidor de desenvolvimento:
 python manage.py runserver
 ```
 
-### 📍 Exemplo em gif
+### 📍 Execução no ambiente Windows
 ![alt text](https://github.com/rauldosS/rest-api-django/blob/main/images/0.png?raw=true)
 
 ### 📍 Informação de recursos
@@ -139,7 +139,7 @@ Content-Type: application/json; charset=utf8
 /api/transaction-detail
 ```
 
-> Exemplo detalhes da transação 1
+> v.g. detalhes da transação 1
 ```shell
 /api/transaction-detail/1
 ```
@@ -168,7 +168,7 @@ Content-Type: application/json; charset=utf8
 /api/transaction-update
 ```
 
-> Exemplo atualizando transação 5
+> v.g. atualizando transação 5
 
 ```shell
 /api/transaction-update/5
@@ -185,8 +185,8 @@ Content-Type: application/json; charset=utf8
 }
 ```
 
-## Exemplo de consumo através do Insomnia REST
-## Exemplo de consumo através do Django Rest framework
+## Consumo através do Insomnia REST
+## Consumo através do Django Rest framework
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
