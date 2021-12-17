@@ -1,5 +1,3 @@
-![Thumbnail GitHub](https://user-images.githubusercontent.com/8989346/123303345-171fc980-d4f4-11eb-84ae-cb0e49bfb126.png)
-
 # Technical Test Nexxera Group
 
 Teste Técnico - Grupo de Programadores Python Nexxera
