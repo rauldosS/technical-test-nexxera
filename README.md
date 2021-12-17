@@ -22,7 +22,7 @@ cd technical-test-nexxera
 2. Crie um ambiente virtual:
 > Linux
 ```shell
-python -m venv <virtual env path>
+python -m venv env
 ```
 
 > Windows
@@ -33,7 +33,7 @@ python -m venv env
 3. Ative o ambiente virtual que você acabou de criar:
 > Linux
 ```shell
-python -m venv <virtual env path>
+python -m venv env
 ```
 
 > Windows
