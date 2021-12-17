@@ -57,7 +57,7 @@ python manage.py runserver
 ```
 
 ### 📍 Execução no ambiente Windows
-![alt text](https://github.com/rauldosS/rest-api-django/main/images/01.gif?raw=true)
+![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/01.gif?raw=true)
 
 ### 📍 Informação de recursos
 
@@ -78,7 +78,7 @@ http://127.0.0.1:8000/api/
 
 > Ao acessar a URL base uma página chamada Api Overview contendo as configurações e lista de requisições aceitas será apresentadas.
 
-![alt text](https://github.com/rauldosS/rest-api-django/main/images/02.png?raw=true)
+![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/02.png?raw=true)
 
 ## ⚙️ Parâmetros
 
@@ -183,19 +183,19 @@ Content-Type: application/json; charset=utf8
 
 ## Consumo através do Insomnia REST
 
-- [JSON](https://github.com/rauldosS/technical-test-nexxera/main/Transactions.json)
+- [JSON](https://github.com/rauldosS/technical-test-nexxera/blob/main/Transactions.json)
 - [Como Importar e Exportar Dados com Insomnia](https://docs.insomnia.rest/insomnia/import-export-data)
 
 > /api/transaction-list/
-![alt text](https://github.com/rauldosS/rest-api-django/main/images/04.png?raw=true)
+![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/04.png?raw=true)
 
 > /api/transaction-create/
-![alt text](https://github.com/rauldosS/rest-api-django/main/images/05.png?raw=true)
+![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/05.png?raw=true)
 ## Consumo através do Django Rest framework
 
 > /api/transaction-list/
 
-![alt text](https://github.com/rauldosS/rest-api-django/main/images/03.png?raw=true)
+![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/03.png?raw=true)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
