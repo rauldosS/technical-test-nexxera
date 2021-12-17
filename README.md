@@ -13,12 +13,6 @@ relacionados às atividades bancárias do seu aplicativo. A API de contas digita
 
 **Instruções necessárias para abrir e executar o projeto**
 
-- Clone esse repositório
-- Crie um virtualenv com Python 3
-- Ative o virtualenv
-- Instale as dependências
-- Rode as migrações
-
 1. Clone o repositório e entre na pasta:
 ```shell
 git clone https://github.com/rauldosS/technical-test-nexxera.git
