@@ -96,14 +96,10 @@ Content-Type: application/json; charset=utf8
 ```
 
 - <b>Content-Type</b>: cada solicitação deve incluir um `Content-Type` cabeçalho.
-
-```shell
-Content-Type: application/json; charset=utf8
-```
-
 ## 🔨 Consumo da API
 
 ### Todas as transações
+> Consulta todas as transações
 ```shell
 /api/transaction-list
 ```
@@ -125,7 +121,7 @@ Content-Type: application/json; charset=utf8
 /api/transaction-list/?account=1&function=D
 ```
 ```shell
-/api/transaction-list/?account=1&function=D
+/api/transaction-list/?account=1&function=C
 ```
 
 ### Detalhes da Transação
@@ -186,15 +182,14 @@ Content-Type: application/json; charset=utf8
 - [JSON](https://github.com/rauldosS/technical-test-nexxera/blob/main/Transactions.json)
 - [Como Importar e Exportar Dados com Insomnia](https://docs.insomnia.rest/insomnia/import-export-data)
 
-> /api/transaction-list/
+> ```shell /api/transaction-list/```
 ![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/04.png?raw=true)
 
-> /api/transaction-create/
+> ```shell /api/transaction-create/```
 ![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/05.png?raw=true)
 ## Consumo através do Django Rest framework
 
-> /api/transaction-list/
-
+> ```shell /api/transaction-list/```
 ![alt text](https://github.com/rauldosS/technical-test-nexxera/blob/main/images/03.png?raw=true)
 
 ## ✔️ Técnicas e tecnologias utilizadas
